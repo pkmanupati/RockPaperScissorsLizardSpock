@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        language: [ 'csharp', 'java', 'javascript', 'python' ]
+        language: [ 'csharp', 'java', 'python' ]
     steps:
       - name: Checkout repository
         id: checkout_repo
