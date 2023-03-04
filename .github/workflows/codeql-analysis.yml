@@ -8,12 +8,13 @@ on:
     paths:
       - 'Source/**'
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '5 4 * 2 *'
   workflow_dispatch:
 
 jobs:
   analyze:
     name: Analyze
+    permissions: write-all
     runs-on: ubuntu-latest
     strategy:
       matrix:
